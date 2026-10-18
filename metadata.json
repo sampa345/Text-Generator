@@ -1,0 +1,6 @@
+{
+  "name": "TypeCraft - Text Generator",
+  "description": "Premium Unicode text generator and utility suite. Transform text instantly into cursed, upside down, cursive, bold, fancy, and 20+ aesthetic styles with one-click copy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

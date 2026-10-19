@@ -2,7 +2,7 @@ import { ToolDefinition, ToolFAQ } from "./tools-registry";
 
 export const SITE_NAME = "TypeCraft";
 export const SITE_TAGLINE = "Modern Text Utility & Styling Suite";
-export const DEFAULT_PRODUCTION_URL = "https://typecraft.app";
+export const DEFAULT_PRODUCTION_URL = "https://text-generator-ruby-ten.vercel.app";
 
 export function getBaseUrl(): string {
   if (process.env.APP_URL) {

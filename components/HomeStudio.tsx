@@ -637,7 +637,7 @@ export function HomeStudio() {
                       <div className="pt-1 flex items-center justify-between text-xs">
                         <span className="text-[#0095f6] font-medium flex items-center gap-1">
                           <ExternalLink className="w-3 h-3" />
-                          <span>typecraft.app/{instaHandle}</span>
+                          <span>text-generator-ruby-ten.vercel.app/{instaHandle}</span>
                         </span>
                         <span
                           className={`text-[10px] ${

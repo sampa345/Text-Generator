@@ -145,7 +145,7 @@ export default async function Image() {
               color: "#94a3b8"
             }}
           >
-            <span>typecraft.app</span>
+            <span>text-generator-ruby-ten.vercel.app</span>
           </div>
         </div>
       </div>

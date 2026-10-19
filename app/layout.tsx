@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL || "https://typecraft.app"),
+  metadataBase: new URL(process.env.APP_URL || "https://text-generator-ruby-ten.vercel.app"),
   title: {
     default: "Free Text Generator – Copy and Paste 20+ Aesthetic Fonts | TypeCraft",
     template: "%s | TypeCraft"

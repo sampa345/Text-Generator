@@ -66,6 +66,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1
     }
+  },
+  verification: {
+    google: "m-QHTv3N-D91W3AUK1YU8NaMUZj22Gilb_cC7Ll4Y9U"
   }
 };
 
@@ -96,6 +99,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <meta
+          name="google-site-verification"
+          content="m-QHTv3N-D91W3AUK1YU8NaMUZj22Gilb_cC7Ll4Y9U"
+        />
         <script dangerouslySetInnerHTML={{ __html: fetchPatchScript }} />
       </head>
       <body

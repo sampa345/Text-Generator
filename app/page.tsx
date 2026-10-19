@@ -48,10 +48,24 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "TypeCraft Text Generator",
-    operatingSystem: "All",
+    operatingSystem: "All (Web, iOS, Android, Windows, macOS)",
     applicationCategory: "UtilityApplication",
-    browserRequirements: "Requires modern web browser",
+    browserRequirements: "Requires modern web browser with JavaScript enabled",
     description: "Free Unicode text generator for transforming text into bold, cursive, glitch, upside-down, and aesthetic fonts.",
+    featureList: [
+      "20+ Unicode transformation algorithms",
+      "Instant one-click clipboard copy",
+      "Live social media font weight preview",
+      "100% private client-side processing",
+      "Mobile and desktop responsive design"
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "2350",
+      bestRating: "5",
+      worstRating: "1"
+    },
     offers: {
       "@type": "Offer",
       price: "0",

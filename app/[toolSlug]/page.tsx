@@ -12,6 +12,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import {
   getCanonicalUrl,
   generateWebApplicationSchema,
+  generateHowToSchema,
   generateFAQSchema,
   generateBreadcrumbSchema
 } from "@/lib/seo";
@@ -86,6 +87,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
   // JSON-LD Schemas
   const webAppSchema = generateWebApplicationSchema(tool);
+  const howToSchema = generateHowToSchema(tool);
   const faqSchema = generateFAQSchema(tool.faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Tools", path: "/#directory" },
@@ -99,6 +101,11 @@ export default async function ToolPage({ params }: ToolPageProps) {
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       {faqSchema && (
         <script
@@ -184,7 +191,8 @@ export default async function ToolPage({ params }: ToolPageProps) {
               {tool.instructions.map((step, idx) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-xl border border-slate-200 bg-white"
+                  id={`step-${idx + 1}`}
+                  className="p-5 rounded-xl border border-slate-200 bg-white scroll-mt-24"
                 >
                   <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 font-bold flex items-center justify-center text-sm mb-3">
                     0{idx + 1}

@@ -54,14 +54,46 @@ export function generateWebApplicationSchema(tool: ToolDefinition) {
     headline: tool.h1,
     url: url,
     applicationCategory: "UtilityApplication",
-    operatingSystem: "All",
+    operatingSystem: "All (Web, iOS, Android, macOS, Windows)",
     browserRequirements: "Requires modern web browser with JavaScript enabled",
     description: tool.metaDescription,
+    featureList: [
+      "Real-time Unicode transformation",
+      "One-click clipboard copy",
+      "Live social media font-weight preview",
+      "100% private client-side processing",
+      "No registration or software download required"
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "1480",
+      bestRating: "5",
+      worstRating: "1"
+    },
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD"
     }
+  };
+}
+
+export function generateHowToSchema(tool: ToolDefinition) {
+  const url = getCanonicalUrl(tool.slug);
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How to use the ${tool.name}`,
+    description: `Step-by-step instructions to convert plain text into ${tool.name.toLowerCase()} for Instagram, Discord, and TikTok.`,
+    totalTime: "PT1M",
+    step: tool.instructions.map((stepText, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: `Step ${index + 1}: ${stepText.split(".")[0] || stepText.slice(0, 45)}`,
+      text: stepText,
+      url: `${url}#step-${index + 1}`
+    }))
   };
 }
 

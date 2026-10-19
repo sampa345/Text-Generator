@@ -46,10 +46,10 @@ export function Header() {
               Cursive Script
             </Link>
             <Link
-              href="/keyword-strategy"
+              href="/blog"
               className="hover:text-slate-900 transition-colors whitespace-nowrap shrink-0 py-1"
             >
-              SEO Insights
+              Guides
             </Link>
           </nav>
 
@@ -124,11 +124,11 @@ export function Header() {
             Bold Text Generator
           </Link>
           <Link
-            href="/keyword-strategy"
+            href="/blog"
             onClick={() => setMobileMenuOpen(false)}
-            className="block px-3 py-2.5 rounded-lg text-base font-medium text-indigo-600 hover:bg-indigo-50 min-h-[44px] flex items-center"
+            className="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-900 hover:bg-slate-50 min-h-[44px] flex items-center"
           >
-            Semrush Keyword Strategy
+            Unicode & Typography Guides
           </Link>
           <div className="pt-2">
             <Link

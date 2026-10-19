@@ -105,10 +105,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Utilities & Strategy Column */}
+          {/* Utilities & Guides Column */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-200">
-              Utilities & Strategy
+              Utilities & Guides
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
@@ -132,13 +132,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/keyword-strategy" className="hover:text-white transition-colors text-indigo-400">
-                  Semrush Strategy
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Unicode Guides
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  Unicode Guides
+                <Link href="/about" className="hover:text-white transition-colors">
+                  About Engine
                 </Link>
               </li>
             </ul>
